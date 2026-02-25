@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    text-align: center;
+            background-image:linear-gradient(brown,blue);
+        }
+        </style>
+</head>
+<body>
+<center>
+      <section>
+        <img class="myslides" src="Swimming 1.jpeg" style="height:500px; width:80%;">
+        <img class="myslides" src="occer 1.jpeg" style="height:500px; width:80%;">
+        <img class="myslides" src="Cricket 1.jpeg" style="height:500px; width:80%;">
+        <img class="myslides" src="Bandminton 1.jpeg" style="height:500px; width:80%;">
+        <img class="myslides" src="Volleyball.jfif" style="height:500px; width:80%;">
+        <img class="myslides" src="tennis.jfif" style="height:500px; width:80%;">
+        <img class="myslides" src="Sky diving.jfif" style="height:500px; width:80%;">
+        <img class="myslides" src="Karate.jfif" style="height:500px; width:80%;">
+        <img class="myslides" src="Running.jfif" style="height:500px; width:80%;">
+        <img class="myslides" src="Cycling.jfif" style="height:500px; width:80%;">
+      </section>
+      <script>
+        var myindex=0
+        carousel();
+        function carousel(){
+            var i;
+            var x=document.getElementsByClassName("myslides");
+            for(i=0;i<x.length;i++){
+                x[i].style.display="none";
+            }
+            myindex++;
+            if(myindex>x.length){
+                myindex=1
+            }
+            x[myindex-1].style.display="block";
+            setTimeout(carousel,2000);
+        }
+      </script>
+      </center>
+</body>
+</html>
